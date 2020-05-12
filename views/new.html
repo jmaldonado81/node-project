@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>IS 445 Project - Joji Maldonado</title>
+    <style>
+        .btn {
+          background-color: DodgerBlue;
+          border: none;
+          color: white;
+          padding: 10px 12px;
+          font-size: 14px;
+          cursor: pointer;
+        }
+        
+        
+        .btn:hover {
+          background-color: RoyalBlue;
+        }
+        .p-4 {
+          background-color: lightgray;
+          color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div data-role="header" style="background-color: royalblue; font:impact; color:white" class="fixed-bar">
+            Contact Management
+            <a href="../views/index.html" button type="btn" class="btn"> Index</a>   
+            <a href="../views/new.html" button type="btn" class="btn"> New</a>
+        <div class="text-center text-info" id="result"></div>
+        <form class="border p-4">
+            New Contact
+        </form>
+    <div class="container">
+        <div data-role="header" style="background-color: white; font:impact; color:black; class="fixed-bar">
+            <form action="/action_page.php">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="phone">Phone:</label><br>
+                <input type="text" id="phone" name="phone"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        
+    </div>
+    <script src="/app.js"></script>    
+</body>
+</html>
